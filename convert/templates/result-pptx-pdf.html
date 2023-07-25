@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download PDF</title>
+</head>
+<body>
+    <h1>PDF Conversion Complete</h1>
+    <p>Click the button below to download the converted PDF file:</p>
+    <a href="{{ url_for('download_pdf_pptx', pdf_file=output_pdf) }}" download>
+        <button>Download PDF</button>
+    </a>
+</body>
+</html>

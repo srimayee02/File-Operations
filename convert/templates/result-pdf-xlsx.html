@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conversion Result</title>
+</head>
+<body>
+    <h1>{{ result_msg }}</h1>
+    {% if xlsx_filename %}
+        <p><a href="{{ url_for('download_xlsx', xlsx_filename=xlsx_filename) }}">Click here to download the converted XLSX file</a></p>
+    {% endif %}
+</body>
+</html>
